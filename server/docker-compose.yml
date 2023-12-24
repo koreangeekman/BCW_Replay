@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/BCW_Replay:latest
+    env_file:
+      - BCW_Replay-env
+    ports:
+      - "7045:80"
